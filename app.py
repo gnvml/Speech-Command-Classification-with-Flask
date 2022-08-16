@@ -39,7 +39,8 @@ def audio():
     print('Predict text: ',text)
     return_text = " Did you say : <br> "
     try:
-        return_text += text  + " <br> "
+        for num, texts in enumerate(text):
+            return_text += str(num+1) +") " + texts  + " <br> "
     except:
         return_text = " Sorry!!!! Voice not Detected "
         

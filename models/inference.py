@@ -30,7 +30,7 @@ class SpeechCommand():
         tensor = self.transform(tensor)
         tensor = self.model(tensor.unsqueeze(0))
         tensor = get_likely_index(tensor)
-        command = index_to_label(tensor.squeeze(), self.labels)
+        command = [index_to_label(index.squeeze(), self.labels) for index in tensor]
         return command
 
 

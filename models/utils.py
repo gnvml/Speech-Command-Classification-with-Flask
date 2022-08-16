@@ -2,7 +2,8 @@ import torch
 
 def get_likely_index(tensor):
     # find most likely label index for each element in the batch
-    return tensor.argmax(dim=-1)
+    tensor = tensor.cpu().detach().numpy()
+    return tensor[0][0].argsort(axis=-1)[-3:][::-1]
 
 def label_to_index(word, labels):
     # Return the position of the word in labels
