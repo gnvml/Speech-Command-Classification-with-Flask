@@ -2,14 +2,14 @@
 .column1 {
     float: left;
     width: 30%;
-    height: 400px; /* Should be removed. Only for demonstration */
+    height: 500px; /* Should be removed. Only for demonstration */
     background-color: #fff;
   }
   
   .column2 {
     float: left;
     width: 70%;
-    height: 400px; /* Should be removed. Only for demonstration */
+    height: 500px; /* Should be removed. Only for demonstration */
     background-color: #0f4da6;
   }
   
