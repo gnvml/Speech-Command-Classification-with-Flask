@@ -1,0 +1,9 @@
+server_config:
+  host: "0.0.0.0"
+  port: 5000
+
+ai_model_config:
+  sample_rate: 16000
+  new_sample_rate: 8000
+  checkpoint_path: 'models/checkpoints/speech_command_m5_v1.pt'
+  label_path: 'config/labels.txt'
