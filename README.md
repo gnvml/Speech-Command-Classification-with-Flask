@@ -34,7 +34,7 @@ Networks were trained with increased 30 and 50 epochs with incremental improveme
 *   30 Epoch network accuracy:  92%
 *   50 Epoch network accuracy: 94%
 
-### Access [live notebook](https://colab.research.google.com/drive/1V-HQeaBzyZu7nyJNo7uTAdE7i3_w59-T?usp=sharing)result for more details
+### Access [live notebook](https://colab.research.google.com/drive/1V-HQeaBzyZu7nyJNo7uTAdE7i3_w59-T?usp=sharing) result for more details
 
 ![LossAndAccuracy](https://github.com/gnvml/Speech-Command-Classification-with-Flask/blob/master/experiment/loss_acc.png)
 
