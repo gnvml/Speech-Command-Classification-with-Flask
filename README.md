@@ -21,7 +21,7 @@ root
 ## Detail about the experiments
 [This notebook](https://github.com/gnvml/Speech-Command-Classification-with-Flask/blob/master/speech_command_classification.ipynb) implemented speech command recognition using convolutional neural networks trained on the Google SpeechCommand dataset.
 
-M5 layer architecture convolutional neural networks were implemented and the networks were trained on the time domain waveform inputs of the SpeechCommand dataset.
+M5, M18 layer architecture convolutional neural networks were implemented and the networks were trained on the time domain waveform inputs of the SpeechCommand dataset.
 
 The dataset consists of 105 000 .wav files that was split into a training (105829 files) and testing (11005 files) datasets.
 
@@ -31,8 +31,8 @@ An Adam optimiser was used, with weight decay set to 0.0001. Initial learning ra
 
 Networks were trained with increased 30 and 50 epochs with incremental improvements. The results and graphs are shown above in TensorBoard
 
-*   30 Epoch network accuracy:  92%
-*   50 Epoch network accuracy: 94%
+*   30 Epoch network accuracy:  M5: 92%, M18: 95%
+*   50 Epoch network accuracy: M5: 94%, M18: 98%
 
 ### Access [live notebook](https://colab.research.google.com/drive/1V-HQeaBzyZu7nyJNo7uTAdE7i3_w59-T?usp=sharing) result for more details
 
