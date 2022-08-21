@@ -40,22 +40,26 @@ function doneEncoding(soundBlob) {
 
 function stopRecording() {
     // stop recording
+  
     audioRecorder.stop();
-    document.getElementById('stop').disabled = true;
-    document.getElementById('start').removeAttribute('disabled');
+    document.getElementById("stop").disabled = true;
+    document.getElementById("start").removeAttribute("disabled");
     audioRecorder.getBuffers(gotBuffers);
-}
-
-function startRecording() {
-
+    document.getElementById("start").style.backgroundColor = "blue";
+    document.getElementById("stop").style.backgroundColor = "#e74c3c";
+  }
+  
+  function startRecording() {
+    document.getElementById("start").removeAttribute("disabled");
+    document.getElementById("start").style.backgroundColor = "#2ecc71";
+    document.getElementById("stop").style.backgroundColor = "blue";
     // start recording
-    if (!audioRecorder)
-        return;
-    document.getElementById('start').disabled = true;
-    document.getElementById('stop').removeAttribute('disabled');
+    if (!audioRecorder) return;
+  
+    document.getElementById("stop").removeAttribute("disabled");
     audioRecorder.clear();
     audioRecorder.record();
-}
+  }
 
 function convertToMono(input) {
     var splitter = audioContext.createChannelSplitter(2);
